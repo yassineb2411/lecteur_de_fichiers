@@ -27,6 +27,7 @@ public class FileTxt extends FileType {
     @Override
     public void displayContent() throws IOException {
         String content = readFile();
+        System.out.println("Contenu :");
         System.out.println(content);
     }
 
@@ -40,10 +41,10 @@ public class FileTxt extends FileType {
             return;
         }
 
-        System.out.println("Contenu inversé : ");
+        System.out.println("Contenu inversé :");
         String[] lines = content.split("\n");
         for (int i = lines.length - 1; i >= 0; i--) {
-            System.out.println(lines[i]); // Affiche chaque ligne à l'envers
+            System.out.println(lines[i]);
         }
         closeFile();
     }
@@ -58,7 +59,8 @@ public class FileTxt extends FileType {
         }
 
         StringBuilder palindromicContent = new StringBuilder(content).reverse();
-        System.out.println("\n Contenu palindromique : " + palindromicContent.toString()); // Affiche le contenu palindromique
+        System.out.println("");
+        System.out.println("Contenu palindromique : " + palindromicContent.toString());
     }
 
 
