@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class FileReader {
     public static void main(String[] args) {
-        FileType fileTxt = new FileTxt("C:/Users/FlowUP/Desktop/SampleCSVFile_2kb.csv");
+        FileType fileTxt = new FileTxt("");
 
         try {
             fileTxt.openFile();
